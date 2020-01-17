@@ -1,0 +1,58 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enable: false
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gatewayServer
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+            - GET
+            - PUT
+            - POST
+            - PATCH 
+            - DELETE
+            - OPTIONS
+zuul:
+  routes:
+    '2':
+      path: /2/**
+      serviceId: configserver
+    angularui:
+      path: /angularui/**
+      serviceId: ui
+    config:
+      path: /config/**
+      serviceId: configserver
+    configserver:
+      path: /configserver/**
+      serviceId: configserver
+    employee:
+      path: /employee/**
+      service-id: employeesearchservice
+    spa:
+      path: /spa/**
+      serviceId: spa-svc
+      url: http://spa-svc
+    ui:
+      path: /ui/**
+      serviceId: employeedashboardservice
