@@ -34,12 +34,12 @@ spring:
             - OPTIONS
 zuul:
   routes:
-    '2':
-      path: /2/**
-      serviceId: configserver
-    angularui:
-      path: /angularui/**
-      serviceId: ui
+#    '2':
+#      path: /2/**
+#      serviceId: configserver
+#    angularui:
+#      path: /angularui/**
+#      serviceId: ui
     config:
       path: /config/**
       serviceId: configserver
