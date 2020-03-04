@@ -43,16 +43,16 @@ zuul:
     config:
       path: /config/**
       serviceId: configserver
-    configserver:
-      path: /configserver/**
-      serviceId: configserver
-    employee:
-      path: /employee/**
-      service-id: employeesearchservice
-    spa:
-      path: /spa/**
-      serviceId: spa-svc
-      url: http://spa-svc
-    ui:
-      path: /ui/**
-      serviceId: employeedashboardservice
+#    configserver:
+#      path: /configserver/**
+#      serviceId: configserver
+#    employee:
+#      path: /employee/**
+#      service-id: employeesearchservice
+#    spa:
+#      path: /spa/**
+#      serviceId: spa-svc
+#      url: http://spa-svc
+#    ui:
+#      path: /ui/**
+#      serviceId: employeedashboardservice
