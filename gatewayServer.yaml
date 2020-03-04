@@ -40,9 +40,9 @@ zuul:
 #    angularui:
 #      path: /angularui/**
 #      serviceId: ui
-    config:
-      path: /config/**
-      serviceId: configserver
+#    config:
+#      path: /config/**
+#      serviceId: configserver
 #    configserver:
 #      path: /configserver/**
 #      serviceId: configserver
