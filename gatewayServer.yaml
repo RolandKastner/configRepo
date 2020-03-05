@@ -32,8 +32,8 @@ spring:
             - PATCH 
             - DELETE
             - OPTIONS
-zuul:
-  routes:
+#zuul:
+#  routes:
 #    '2':
 #      path: /2/**
 #      serviceId: configserver
