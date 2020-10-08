@@ -16,22 +16,25 @@ security:
 server:
   port: 8080
 
-spring:
-  application:
-    name: gatewayServer
-  cloud:
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:4200"
-            allowedMethods:
-            - GET
-            - PUT
-            - POST
-            - PATCH 
-            - DELETE
-            - OPTIONS
+# spring:
+#   application:
+#     name: gatewayServer
+#   cloud:
+#     gateway:
+#       globalcors:
+#         corsConfigurations:
+#           '[/**]':
+#             allowedOrigins: "http://localhost:4200"
+#             allowedMethods:
+#             - GET
+#             - PUT
+#             - POST
+#             - PATCH 
+#             - DELETE
+#             - OPTIONS
+
+
+
 #zuul:
 #  routes:
 #    '2':
